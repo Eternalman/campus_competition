@@ -206,23 +206,21 @@ campus_competition/
 │       └── bert_query_classifier/
 │
 ├── campus_competition_frontend/      # Vue3 前端
-│   └── src/
-│       ├── views/
-│       │   ├── front/                # 前台页面
-│       │   │   ├── AIAssistant.vue   # AI 助手（侧边栏+聊天区）
-│       │   │   ├── Home.vue          # 首页
-│       │   │   ├── CompetitionDetail.vue  # 赛事详情
-│       │   │   └── Profile.vue       # 个人中心
-│       │   └── admin/                # 后台管理页面
-│       ├── components/               # 公共组件
-│       │   ├── AIAssistant.vue       # 导航栏 AI 助手弹窗
-│       │   └── Header.vue            # 页头导航
-│       ├── composables/
-│       │   └── useRagChat.js         # RAG 聊天 Composable
-│       ├── router/index.js           # 路由配置
-│       └── utils/request.js          # Axios 封装（JWT 认证）
-│
-└── 项目问题与解决.md                  # 开发问题记录
+    └── src/
+        ├── views/
+        │   ├── front/                # 前台页面
+        │   │   ├── AIAssistant.vue   # AI 助手（侧边栏+聊天区）
+        │   │   ├── Home.vue          # 首页
+        │   │   ├── CompetitionDetail.vue  # 赛事详情
+        │   │   └── Profile.vue       # 个人中心
+        │   └── admin/                # 后台管理页面
+        ├── components/               # 公共组件
+        │   ├── AIAssistant.vue       # 导航栏 AI 助手弹窗
+        │   └── Header.vue            # 页头导航
+        ├── composables/
+        │   └── useRagChat.js         # RAG 聊天 Composable
+        ├── router/index.js           # 路由配置
+        └── utils/request.js          # Axios 封装（JWT 认证）
 ```
 
 ## API 接口
@@ -276,22 +274,6 @@ POST /api/rag/query/ {query, session_id}
     ├─ DashScope LLM 流式生成答案
     └─ 返回 {answer, session_id, source, references}
 ```
-
-## 开发问题记录
-
-详见 [项目问题与解决.md](./项目问题与解决.md)，涵盖：
-
-1. 前端 AI 页面接入 RAG 功能
-2. Milvus 混合检索稀疏向量为空报错
-3. 后端服务流式响应后静默崩溃
-4. FQA/RAG 答案 Redis 缓存缺失
-5. AI 助手新建对话 + 侧边栏历史
-6. 用户对话隔离
-7. RAG 回答附带数据来源
-8. 知识库文档上传后台处理
-9. BERT 分类器误判通用知识
-10. Windows 控制台 UTF-8 编码
-
 ## License
 
 MIT
