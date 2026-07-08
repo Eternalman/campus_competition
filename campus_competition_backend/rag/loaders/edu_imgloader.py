@@ -37,6 +37,6 @@ class OCRIMGLoader(BaseLoader):
 
 
 if __name__ == '__main__':
-    img_loader = OCRIMGLoader(img_path='/0001.项目目录/others/test/人工智能就业课课程大纲.png')
+    img_loader = OCRIMGLoader(img_path='/others/test/人工智能大纲.png')
     doc = img_loader.load()
     print(doc)
