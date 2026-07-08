@@ -1,0 +1,80 @@
+# ==================== Python / Django ====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.log
+*.pot
+*.egg-info/
+*.egg
+dist/
+build/
+*.so
+*.dll
+*.pyd
+
+# 虚拟环境
+.venv/
+venv/
+env/
+.env/
+*.virtualenv/
+
+# Django
+*.sqlite3
+/db.sqlite3
+/media/
+/staticfiles/
+/campus_competition_backend/logs/
+/campus_competition_backend/media/
+
+# 本地模型文件（太大，需单独下载）
+/campus_competition_backend/models/*
+!/campus_competition_backend/models/.gitkeep
+
+# 环境变量（含密钥）
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==================== Node.js / Vue ====================
+node_modules/
+/campus_competition_frontend/dist/
+/campus_competition_frontend/.env.local
+/campus_competition_frontend/.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==================== 操作系统 ====================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ==================== 其他 ====================
+*.bak
+*.tmp
+*.temp
+.temp/
+tmp/
+
+# Milvus
+/milvus_data/
+/volumes/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# 覆盖率
+htmlcov/
+.coverage
+.coverage.*
+.coveralls.yml
